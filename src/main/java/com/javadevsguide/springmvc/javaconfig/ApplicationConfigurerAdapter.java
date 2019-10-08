@@ -8,11 +8,7 @@ import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter;
 import org.springframework.web.servlet.view.InternalResourceViewResolver;
 
-/**
- * This configuration class is replacement of "spring-servlet.xml" file, Here you need to specify the component scanning and view resolver details.
- * @author GS-1787
- *
- */
+
 @EnableWebMvc
 @Configuration
 @ComponentScan(basePackages = "com.javadevsguide.springmvc")

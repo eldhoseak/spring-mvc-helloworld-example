@@ -4,15 +4,16 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.servlet.ModelAndView;
 
 @Controller
 public class HelloWorldController {
-	/*@RequestMapping(value = "/hello", method = RequestMethod.GET)
+	@RequestMapping(value = "/helloModel", method = RequestMethod.GET)
 	public ModelAndView hello() {
 		ModelAndView modelAndView = new ModelAndView("helloworld")
 				.addObject("name", "Ramesh");
 		return modelAndView;
-	}*/
+	}
 	
 	@RequestMapping(value = "/hello", method = RequestMethod.GET)
 	public String sayHello(ModelMap model) {
