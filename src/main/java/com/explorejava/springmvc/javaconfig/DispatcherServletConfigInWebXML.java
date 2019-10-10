@@ -1,4 +1,4 @@
-package com.javadevsguide.springmvc.javaconfig;
+package com.explorejava.springmvc.javaconfig;
 
 import javax.servlet.ServletContext;
 import javax.servlet.ServletException;
@@ -19,6 +19,6 @@ public class DispatcherServletConfigInWebXML implements WebApplicationInitialize
 		ServletRegistration.Dynamic servlet = container.addServlet("dispatcher", new DispatcherServlet(ctx));
 
 		servlet.setLoadOnStartup(1);
-		servlet.addMapping("/explorejava/*");
+		servlet.addMapping("/example/*");
 	}
 }

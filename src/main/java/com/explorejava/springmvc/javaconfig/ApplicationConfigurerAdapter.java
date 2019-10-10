@@ -1,4 +1,4 @@
-package com.javadevsguide.springmvc.javaconfig;
+package com.explorejava.springmvc.javaconfig;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
@@ -11,7 +11,7 @@ import org.springframework.web.servlet.view.InternalResourceViewResolver;
 
 @EnableWebMvc
 @Configuration
-@ComponentScan(basePackages = "com.javadevsguide.springmvc")
+@ComponentScan(basePackages = "com.explorejava.springmvc")
 public class ApplicationConfigurerAdapter extends WebMvcConfigurerAdapter {
 
 	@Override
@@ -22,7 +22,7 @@ public class ApplicationConfigurerAdapter extends WebMvcConfigurerAdapter {
 	@Bean
 	public InternalResourceViewResolver viewResolver() {
 		InternalResourceViewResolver resolver = new InternalResourceViewResolver();
-		resolver.setPrefix("WEB-INF/jsp/");
+		resolver.setPrefix("/WEB-INF/jsp/");
 		resolver.setSuffix(".jsp");
 		return resolver;
 	}
